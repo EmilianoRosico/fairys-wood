@@ -6,14 +6,16 @@ function Navbar({ active }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
       <div className="container-fluid">
-        <Link href="/">
-          <Image
-            src="/logo.jpeg"
-            alt="Fairy's Logo"
-            width={70}
-            height={70}
-            className="rounded-circle"
-          />
+        <Link href="/" passHref>
+          <a>
+            <Image
+              src="/logo.jpeg"
+              alt="Fairy's Logo"
+              width={70}
+              height={70}
+              className="rounded-circle"
+            />
+          </a>
         </Link>
         <button
           className="navbar-toggler"
