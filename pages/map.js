@@ -5,7 +5,7 @@ function map() {
     return (
         <Layout title="Fairy's Wood - Como Llegar">
             <div className="container-fluid">
-                <h1>Como llegar a Fairy's Wood</h1>
+                <h1>Como llegar a Fairy&apos;s Wood</h1>
             </div>
             <div className="container-fluid div-map" >
               <iframe width="100%" className="vh-100" loading="lazy" allowFullScreen

@@ -6,7 +6,7 @@ export default function Home() {
     <Layout title="Fairy's Wood - Home">
         <div className="container-fluid">
           <h1>
-            Bienvenidos a Fairy's Wood
+            Bienvenidos a Fairy&apos;s Wood
           </h1>
           <div className="row">
             <div className="col-md-6">

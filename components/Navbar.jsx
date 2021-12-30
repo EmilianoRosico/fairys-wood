@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar({ active }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
       <div className="container-fluid">
-        <a href="/">
+        <Link href="/">
           <Image
             src="/logo.jpeg"
             alt="Fairy's Logo"
@@ -13,7 +14,7 @@ function Navbar({ active }) {
             height={70}
             className="rounded-circle"
           />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,29 +30,39 @@ function Navbar({ active }) {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link fs-4 active" aria-current="page" href="/">
-                Inicio
-              </a>
+              <Link href="/">
+                <a className="nav-link fs-4 active" aria-current="page">
+                  Inicio
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-4" aria-current="page" href="/aboutus">
-                Nosotros
-              </a>
+              <Link href="/aboutus">
+                <a className="nav-link fs-4" aria-current="page">
+                  Nosotros
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-4" aria-current="page" href="/photo">
-                Fotos
-              </a>
+              <Link href="/photo">
+                <a className="nav-link fs-4" aria-current="page">
+                  Fotos
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-4" aria-current="page" href="/map">
-                Como llegar
-              </a>
+              <Link href="/map">
+                <a className="nav-link fs-4" aria-current="page">
+                  Como llegar
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fs-4" aria-current="page" href="/activity">
-                Actividades
-              </a>
+              <Link href="/activity">
+                <a className="nav-link fs-4" aria-current="page">
+                  Actividades
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ function Footer() {
         <h2>CONTACTO</h2>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
-              <a href="https://www.instagram.com/fairyswood/" target="_blank">
+              <a href="https://www.instagram.com/fairyswood/" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -27,6 +27,7 @@ function Footer() {
               <a
                 href="https://web.facebook.com/fairyswood/?_rdc=1&_rdr"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +46,7 @@ function Footer() {
               <a
                 href="https://api.whatsapp.com/send?phone=541127624909&text=Hola, visite la WEB y dese recibir más información!"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

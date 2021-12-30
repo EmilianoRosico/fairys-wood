@@ -4,7 +4,7 @@ export default function Home() {
     <Layout title="Fairy's Wood - Acerca de Nosotros">
         <div className="container-fluid">
           <h1>
-            Acerca de Fairy's Wood
+            Acerca de Fairy&apos;s Wood
           </h1>
           <div className="row">
             <div className="col-md-6">
