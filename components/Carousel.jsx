@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import cabaña1 from "../public/cabaña1B.jpg"
-import cabaña2 from "../public/cabaña2B.jpg"
-import pradera from "../public/pradera.jpg"
-
+import cabaña1 from "../public/cabaña1B.jpg";
+import cabaña2 from "../public/cabaña2B.jpg";
+import pradera from "../public/pradera.jpg";
+import Link from "next/link";
 
 function Carousel() {
   return (
@@ -37,22 +37,46 @@ function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <Image src={cabaña1} className="d-block w-100" alt="Foto Cabaña1" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Cabaña Huet-Huet</h5>
-            </div>
+            <Link href="huethuet">
+              <a>
+                <Image
+                  src={cabaña1}
+                  className="d-block w-100"
+                  alt="Foto Cabaña1"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Cabaña Huet-Huet</h5>
+                </div>
+              </a>
+            </Link>
           </div>
           <div className="carousel-item">
-          <Image src={cabaña2} className="d-block w-100" alt="Fota Cabaña2" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Cabaña Chucao</h5>
-            </div>
+            <Link href="chucao">
+              <a>
+                <Image
+                  src={cabaña2}
+                  className="d-block w-100"
+                  alt="Fota Cabaña2"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Cabaña Chucao</h5>
+                </div>
+              </a>
+            </Link>
           </div>
           <div className="carousel-item">
-          <Image src={pradera} className="d-block w-100" alt="Fota Cabaña3" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Pradera</h5>
-            </div>
+            <Link href="predio">
+              <a>
+                <Image
+                  src={pradera}
+                  className="d-block w-100"
+                  alt="Fota Predio"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Pradera</h5>
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
         <button

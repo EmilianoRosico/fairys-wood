@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 function map() {
     return (
         <Layout title="Fairy's Wood - Como Llegar">
-            <div className="container-fluid">
+            <div className="container">
                 <h1>Como llegar a Fairy&apos;s Wood</h1>
             </div>
             <div className="container-fluid div-map" >
