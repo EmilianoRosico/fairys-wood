@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import cabaña1 from "../public/cabaña1B.jpg"
 import cabaña2 from "../public/cabaña2B.jpg"
-import cabaña3 from "../public/cabaña3.jpg"
+import pradera from "../public/pradera.jpg"
 
 
 function Carousel() {
@@ -40,27 +40,18 @@ function Carousel() {
             <Image src={cabaña1} className="d-block w-100" alt="Foto Cabaña1" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Cabaña Huet-Huet</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
             </div>
           </div>
           <div className="carousel-item">
           <Image src={cabaña2} className="d-block w-100" alt="Fota Cabaña2" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Cabaña Chucao</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
             </div>
           </div>
           <div className="carousel-item">
-          <Image src={cabaña3} className="d-block w-100" alt="Fota Cabaña3" />
+          <Image src={pradera} className="d-block w-100" alt="Fota Cabaña3" />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+              <h5>Pradera</h5>
             </div>
           </div>
         </div>
