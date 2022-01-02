@@ -7,7 +7,7 @@ function Card({ picture }) {
     <div className="col-sm-3">
       <div className="card">
         <Link href={picture} passHref>
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <Image
               src={picture}
               className="card-img-top"
