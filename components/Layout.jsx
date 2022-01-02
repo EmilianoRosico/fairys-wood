@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-function Layout({title, active, children}) {
+function Layout({ title, active, children }) {
   return (
     <>
       <Head>
@@ -17,7 +17,6 @@ function Layout({title, active, children}) {
         {children}
         <Footer />
       </main>
-      
     </>
   );
 }

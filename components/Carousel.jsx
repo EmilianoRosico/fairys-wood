@@ -45,7 +45,7 @@ function Carousel() {
                   alt="Foto Cabaña1"
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Cabaña Huet-Huet</h5>
+                  <span className="fw-bold">Cabaña Huet-Huet</span>
                 </div>
               </a>
             </Link>
@@ -59,7 +59,7 @@ function Carousel() {
                   alt="Fota Cabaña2"
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Cabaña Chucao</h5>
+                  <span className="fw-bold">Cabaña Chucao</span>
                 </div>
               </a>
             </Link>
@@ -73,7 +73,7 @@ function Carousel() {
                   alt="Fota Predio"
                 />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Pradera</h5>
+                  <span className="fw-bold">Pradera</span>
                 </div>
               </a>
             </Link>
