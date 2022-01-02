@@ -33,35 +33,35 @@ function Navbar({ active }) {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href="/">
-                <a className="nav-link fs-4 active" aria-current="page">
+                <a className={`nav-link fs-4 ${active == "inicio"?" active":""}`} aria-current="page">
                   Inicio
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/aboutus">
-                <a className="nav-link fs-4" aria-current="page">
+                <a className={`nav-link fs-4 ${active == "aboutus"?" active":""}`} aria-current="page">
                   Nosotros
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/photo">
-                <a className="nav-link fs-4" aria-current="page">
+                <a className={`nav-link fs-4 ${active == "photos"?" active":""}`} aria-current="page">
                   Fotos
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/map">
-                <a className="nav-link fs-4" aria-current="page">
+                <a className={`nav-link fs-4 ${active == "map"?" active":""}`} aria-current="page">
                   Como llegar
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/activity">
-                <a className="nav-link fs-4" aria-current="page">
+                <a className={`nav-link fs-4 ${active == "activity"?" active":""}`} aria-current="page">
                   Actividades
                 </a>
               </Link>

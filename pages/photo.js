@@ -8,7 +8,7 @@ import pradera from "../public/pradera.jpg"
 
 function photo() {
     return (
-        <Layout title="Fairy's Wood - Fotos">
+        <Layout title="Fairy's Wood - Fotos" active="photos" >
             <div className="container">
                 <h1>Nuestras Fotos </h1>
                 <div className="row">

@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 function activity() {
     return (
-        <Layout title="Fairy's Wood - Actividades">
+        <Layout title="Fairy's Wood - Actividades" active="activity">
             <div className="container">
                 <h1>Actividades en El Bolson</h1>
                 <div className="row">

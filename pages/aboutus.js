@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 export default function Home() {
   return (
-    <Layout title="Fairy's Wood - Acerca de Nosotros">
+    <Layout title="Fairy's Wood - Acerca de Nosotros" active="aboutus" >
         <div className="container">
           <h1>
             Acerca de Fairy&apos;s Wood

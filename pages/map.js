@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 function map() {
     return (
-        <Layout title="Fairy's Wood - Como Llegar">
+        <Layout title="Fairy's Wood - Como Llegar" active="map">
             <div className="container">
                 <h1>Como llegar a Fairy&apos;s Wood</h1>
             </div>

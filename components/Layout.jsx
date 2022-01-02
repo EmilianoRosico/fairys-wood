@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-function Layout({title, children}) {
+function Layout({title, active, children}) {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ function Layout({title, children}) {
         <link rel="icon" href="/logo.jpeg" />
       </Head>
       <main>
-        <Navbar />
+        <Navbar active={active} />
         {children}
         <Footer />
       </main>
