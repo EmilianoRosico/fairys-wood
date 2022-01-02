@@ -37,7 +37,7 @@ function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <Link href="huethuet">
+            <Link href="/huethuet" passHref>
               <a>
                 <Image
                   src={cabaña1}
@@ -51,7 +51,7 @@ function Carousel() {
             </Link>
           </div>
           <div className="carousel-item">
-            <Link href="chucao">
+            <Link href="/chucao" passHref>
               <a>
                 <Image
                   src={cabaña2}
@@ -65,7 +65,7 @@ function Carousel() {
             </Link>
           </div>
           <div className="carousel-item">
-            <Link href="predio">
+            <Link href="/predio" passHref>
               <a>
                 <Image
                   src={pradera}

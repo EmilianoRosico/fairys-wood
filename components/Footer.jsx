@@ -80,7 +80,7 @@ function Footer() {
               Camino Costa del río Azul S/N <br />
               El Bolsón, Patagonia Argentina
             </p>
-            <Link href="/map">
+            <Link href="/map" passHref>
               <a>
                 <span className="fs-3 pb-4 d-block">
                   <i className="red-text">

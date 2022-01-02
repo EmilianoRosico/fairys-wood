@@ -12,8 +12,8 @@ function Card({ picture }) {
               src={picture}
               className="card-img-top"
               alt="..."
-              width={3024}
-              height={4032}
+              width={304}
+              height={405}
             />
           </a>
         </Link>

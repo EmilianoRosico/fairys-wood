@@ -14,7 +14,7 @@ function photo() {
                 <div className="row">
                     <div className="col-lg-4">
                         <h4>Huet-Huet</h4>
-                        <Link href="huethuet">
+                        <Link href="huethuet" passHref>
                             <a>
                                 <Image src={cabaña1} className="d-block w-100" alt="Foto Cabaña1" />
                             </a>
@@ -22,7 +22,7 @@ function photo() {
                     </div>
                     <div className="col-lg-4">
                         <h4>Chucao</h4>
-                        <Link href="chucao">
+                        <Link href="chucao" passHref>
                             <a>
                                 <Image src={cabaña2} className="d-block w-100" alt="Foto Cabaña2" />
                             </a>
@@ -30,7 +30,7 @@ function photo() {
                     </div>
                     <div className="col-lg-4">
                         <h4>Predio</h4>
-                        <Link href="predio">
+                        <Link href="predio" passHref>
                             <a>
                                 <Image src={pradera} className="d-block w-100" alt="Foto Pradera" />
                             </a>
