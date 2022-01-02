@@ -14,30 +14,48 @@ function photo() {
                 <div className="row">
                     <div className="col-lg-4">
                         <h4>Huet-Huet</h4>
-                        <Link href="huethuet" passHref>
-                            <a>
-                                <Image src={cabaña1} className="d-block w-100" alt="Foto Cabaña1" />
-                            </a>
-                        </Link>
+                        <div className="zoom">
+                            <Link href="huethuet" passHref>
+                                <a>
+                                    <Image src={cabaña1} className="d-block w-100 " alt="Foto Cabaña1" />
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                     <div className="col-lg-4">
                         <h4>Chucao</h4>
-                        <Link href="chucao" passHref>
-                            <a>
-                                <Image src={cabaña2} className="d-block w-100" alt="Foto Cabaña2" />
-                            </a>
-                        </Link>
+                        <div className="zoom">
+                            <Link href="chucao" passHref>
+                                <a>
+                                    <Image src={cabaña2} className="d-block w-100" alt="Foto Cabaña2" />
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                     <div className="col-lg-4">
                         <h4>Predio</h4>
-                        <Link href="predio" passHref>
-                            <a>
-                                <Image src={pradera} className="d-block w-100" alt="Foto Pradera" />
-                            </a>
-                        </Link>
+                        <div className="zoom">
+                            <Link href="predio" passHref>
+                                <a>
+                                    <Image src={pradera} className="d-block w-100" alt="Foto Pradera" />
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
+            <style jsx>
+                {`
+                .zoom {
+                    transition: transform .2s; /* Animation */
+                    padding: 9px;
+
+                }   
+                .zoom:hover {
+                    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+                `}
+            </style>
         </Layout>
     )
 }
