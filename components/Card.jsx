@@ -6,7 +6,7 @@ function Card({ picture }) {
   return (
     <div className="col-sm-3">
       <div className="card">
-        <Link href={picture} passHref>
+        <Link href={`/fq/${picture}`} passHref>
           <a target="_blank" rel="noreferrer">
             <Image
               src={picture}
