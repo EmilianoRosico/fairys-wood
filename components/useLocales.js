@@ -6,7 +6,7 @@ export const useLocales = (path) => {
    const [text, setText] = useState({});
    useEffect(() => {
       if (path) {
-         import(`/pages/${path}/${locale}`).then((t) => {
+         import(`/lib/${path}/${locale}`).then((t) => {
          setText(t.default);
       });
    }
