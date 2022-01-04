@@ -7,7 +7,7 @@ import cabaña2 from "../public/cabaña2B.jpg"
 import pradera from "../public/pradera.jpg"
 import { useLocales } from "../components/useLocales";
 
-function photo() {
+export default function Photo() {
     const text = useLocales("about");
     return (
         <Layout title="Fairy's Wood - Fotos" active="photos" >
@@ -61,5 +61,3 @@ function photo() {
         </Layout>
     )
 }
-
-export default photo

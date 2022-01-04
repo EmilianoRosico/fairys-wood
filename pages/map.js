@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { useLocales } from "../components/useLocales";
 
-function map() {
+export default function Map() {
     const text = useLocales("about");
     return (
         <Layout title="Fairy's Wood - Como Llegar" active="map">
@@ -25,5 +25,3 @@ function map() {
         </Layout>
     )
 }
-
-export default map
