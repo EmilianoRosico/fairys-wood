@@ -7,7 +7,7 @@ export default function Home() {
   //esta variable almacena el objeto importado de es.js o en.js
   const text = useLocales("home");
   return (
-    <Layout title="Fairy's Wood - Home" active="inicio" >
+    <Layout title="Fairy's Wood - Home Alquiler cabañas El Bolsón" active="inicio" >
       <div className="container">
         <h1>
           {text.title}
