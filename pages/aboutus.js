@@ -1,18 +1,22 @@
 import Layout from "../components/Layout"
+//importa el Hook para usar diferentes idiomas en los textos.
+import { useLocales } from "../components/useLocales";
+
 export default function Home() {
+  const text = useLocales("about");
   return (
     <Layout title="Fairy's Wood - Acerca de Nosotros" active="aboutus" >
       <div className="container">
         <h1>
-          Acerca de Fairy&apos;s Wood
+          {text.title}
         </h1>
         <div className="row">
           <div className="col-md-6">
-            <p className="me-auto mb-2 mb-lg-0"> Somos un matrimonio que después de muchos años de trabajo como veterinarios, queremos compartir nuestra chacra en el bosque con gente que admire la Naturaleza y quiera descansar.</p>
+            <p className="me-auto mb-2 mb-lg-0">{text.p1}</p>
             <br />
-            <strong>Durante tu estancia:</strong>
+            <strong>{text.subtitle}</strong>
             <p className="me-auto mb-2 mb-lg-0">
-              Vivimos en la chacra y estamos a disposición de nuestros huéspedes para guiarlos y orientarlos en la zona.
+              {text.p2}
             </p>
           </div>
         </div>

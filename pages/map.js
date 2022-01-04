@@ -1,15 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import { useLocales } from "../components/useLocales";
 
 function map() {
+    const text = useLocales("about");
     return (
         <Layout title="Fairy's Wood - Como Llegar" active="map">
             <div className="container">
-                <h1>Como llegar a Fairy&apos;s Wood</h1>
+                <h1>{text.map_title}</h1>
             </div>
             <div className="container-fluid div-map" >
-              <iframe width="100%" className="vh-100" loading="lazy" allowFullScreen
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMWwSkfi_G5YRgFrKdFDNoMU&key=AIzaSyBq3QtSgFghJvpltFNJa7dLG1zJEVVNnS4"></iframe>
+                <iframe width="100%" className="vh-100" loading="lazy" allowFullScreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMWwSkfi_G5YRgFrKdFDNoMU&key=AIzaSyBq3QtSgFghJvpltFNJa7dLG1zJEVVNnS4"></iframe>
             </div>
             <style jsx>
                 {`

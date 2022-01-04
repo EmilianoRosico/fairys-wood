@@ -5,12 +5,14 @@ import Layout from '../components/Layout'
 import cabaña1 from "../public/cabaña1B.jpg"
 import cabaña2 from "../public/cabaña2B.jpg"
 import pradera from "../public/pradera.jpg"
+import { useLocales } from "../components/useLocales";
 
 function photo() {
+    const text = useLocales("about");
     return (
         <Layout title="Fairy's Wood - Fotos" active="photos" >
             <div className="container">
-                <h1>Nuestras Fotos </h1>
+                <h1>{text.photos_title} </h1>
                 <div className="row">
                     <div className="col-lg-4">
                         <h4>Huet-Huet</h4>

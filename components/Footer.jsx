@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { useLocales } from "../components/useLocales";
 
 function Footer() {
+  const text = useLocales("home");
   return (
     <footer className="shadow pt-3">
       <div className="container-fluid footer-color">
         <div className="row">
           <div className="col-md-6 text-center pb-4">
-            <h2>CONTACTO</h2>
+            <h2>{text.contact}</h2>
             <ul className="list-group list-group-flush">
               <li className="list-group-item footer-color">
                 <a
@@ -75,7 +77,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col-md-6 text-center">
-            <h2>DONDE ESTAMOS</h2>
+            <h2>{text.where}</h2>
             <p>
               Camino Costa del río Azul S/N <br />
               El Bolsón, Patagonia Argentina
@@ -96,7 +98,7 @@ function Footer() {
                       <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                     </svg>
                   </i>
-                  Como llegar
+                  {text.how_arrive}
                 </span>
               </a>
             </Link>
