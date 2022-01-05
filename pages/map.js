@@ -5,7 +5,7 @@ import { useLocales } from "../components/useLocales";
 export default function Map() {
     const text = useLocales("about");
     return (
-        <Layout title="Fairy's Wood - Como Llegar" active="map">
+        <Layout title={text.map_title} active="map">
             <div className="container">
                 <h1>{text.map_title}</h1>
             </div>

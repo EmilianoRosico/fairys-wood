@@ -10,7 +10,7 @@ import { useLocales } from "../components/useLocales";
 export default function Photo() {
     const text = useLocales("about");
     return (
-        <Layout title="Fairy's Wood - Fotos" active="photos" >
+        <Layout title={text.photos_title} active="photos" >
             <div className="container">
                 <h1>{text.photos_title} </h1>
                 <div className="row">

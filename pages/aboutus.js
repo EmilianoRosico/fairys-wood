@@ -5,7 +5,7 @@ import { useLocales } from "../components/useLocales";
 export default function Home() {
   const text = useLocales("about");
   return (
-    <Layout title="Fairy's Wood - Acerca de Nosotros" active="aboutus" >
+    <Layout title={text.title} active="aboutus" >
       <div className="container">
         <h1>
           {text.title}
