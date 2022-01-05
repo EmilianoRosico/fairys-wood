@@ -13,6 +13,7 @@ class MyDocument extends Document {
           <meta name="Fairy's Wood" content="Cabañas Fairy's Wood - El Bolsón" />
           <meta name="description" content="Alquiler de Cabañas en El Bolsón, sobre la costa del río Azul. Entorno familiar y tranquilo donde disfrutar la naturaleza." />
           <meta name="description" content="Río Azul, El Bolson, Río Negro, Refugios de montaña, wharthon" />
+          <meta name="google-site-verification" content="3hqFMLwfAdEYKu8igUBwdrz3htgAcb7keMl7RAYRO6M" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
