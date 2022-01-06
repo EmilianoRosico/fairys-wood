@@ -2,18 +2,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function Card({ picture }) {
+function Card2({ picture }) {
   return (
-    <div className="col-sm-3">
-      <div className="card zoom border-0 text-center mb-3">
+    <div className="col-sm-4">
+      <div className="card zoom border-0">
         <Link href={`/fq${picture}`} passHref>
           <a target="_blank" rel="noreferrer">
             <Image
               src={picture}
               className="card-img-top"
               alt="..."
-              width={304}
-              height={405}
+              width={406}
+              height={304}
             />
           </a>
         </Link>
@@ -32,4 +32,4 @@ function Card({ picture }) {
   );
 }
 
-export default Card;
+export default Card2;

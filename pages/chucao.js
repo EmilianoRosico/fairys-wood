@@ -21,13 +21,14 @@ function chucao() {
                             <li>Secador de pelo.</li>
                         </ul>
                     </div>
-                    <div className="col-lg-6">
-                        <p>
+                    <div className="col-lg-6 mb-3">
+                        <span>
                             La cabaña tiene capacidad de 4 a 6 personas.
                             <p><strong>Planta baja:</strong> Estar con sillones y mesa ratona, cocina completa, servicio de ropa de blanco (Sábanas y toallas); 1 baño completo, 1 habitación matrimonial con sommier con ropero, 1 habitación con cama cucheta.</p>
                             <p><strong>Planta alta:</strong> loft con 1 sommier matrimonial y 1 cama individual. </p>
                             Hay un asador y pileta para lavado de ropa. Los vehículos se guardan dentro de la propiedad.
-                        </p>
+                        </span>
+                        <br />
                         <i>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ function huethuet() {
                             <li>Secador de pelo.</li>
                         </ul>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mb-3">
                         <p>
                             La cabaña tiene capacidad para 2 personas y un niño. Posee una habitación matrimonial con colchón de alta densidad, plumón e incluye ropa de blanco (sábanas y toallas).
                             En el exterior hay balcón deck, un asador individual y pileta para lavado de ropa. Los vehículos se guardan dentro
