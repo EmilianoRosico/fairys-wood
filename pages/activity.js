@@ -1,35 +1,60 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
+import refugio from '../public/refugios1.jpg'
+import cascada from '../public/cascada_mallin.jpg'
+import bosque from '../public/bosquetallado.jpg'
+//importa el Hook para usar diferentes idiomas en los textos.
+import { useLocales } from "../components/useLocales";
 
-function activity() {
+function Activity() {
+    //esta variable almacena el objeto importado de es.js o en.js
+    const text = useLocales("about");
     return (
-        <Layout title="Fairy's Wood - Actividades" active="activity">
+        <Layout title={text.activity_title} active="activity">
             <div className="container">
-                <h1>Actividades en El Bolson</h1>
-                <div className="row border mb-3">
-                    <div className="col-md-6">
-                        <p className="me-auto mb-2 mb-lg-0">
-                            Pueden hacer actividades como trecking, pesca deportiva, avistaje de aves, conocer el cajón del Río Azul,
-                            ascender a refugios de montaña, llegar al centro de esquí, encontrás la cascada Escondida, y la del Mallín Ahogado,
-                            pueden hacer Canopy, rafting, cabalgatas, ciclismo, etc.
-                        </p>
-                    </div>
-                    <div className="col-md-6 text-end">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium beatae consectetur. Odit ad quaerat rerum nisi blanditiis voluptate id iusto maiores similique explicabo cumque, consectetur molestias! Cupiditate, dolorem eum!</p>
-                    </div>
+                <h1>{text.activity_title}</h1>
+                <div className="mb-3">
+                    <p className="me-auto mb-2 mb-lg-0">
+                        {text.activity_principal}
+                    </p>
                 </div>
-                <div className="row border mb-3">
-                    <div className="col-md-6">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et at quibusdam deleniti fugiat modi eius sequi dignissimos laboriosam aliquam possimus debitis dicta dolore in omnis inventore, quis corporis vero delectus?</p>
+                <div className="row mb-3">
+                    <div className="col-md-4 mb-3">
+                        <div className="card">
+                            <Image src={refugio} className="card-img-top" alt="Refugios" />
+                            <div className="card-body">
+                                <span className="card-title fs-4 fw-bold">{text.activity_ref_title}</span>
+                                <p className="card-text"> {text.activity_ref_p} </p>
+                                <a className=" btn btn-primary" href='https://www.turismoelbolson.gob.ar/refugios-de-montana' target='_blank' rel='noreferrer'>Más información</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-6 text-end">
-                        
+                    <div className="col-md-4 mb-3">
+                        <div className="card">
+                            <Image src={cascada} className="card-img-top" alt="Cascada Mallin" />
+                            <div className="card-body">
+                                <span className="card-title fs-4 fw-bold"> {text.activity_cat_title} </span>
+                                <p className="card-text"> {text.activity_cat_p} </p>
+                                <a className=" btn btn-primary" href='https://www.turismoelbolson.gob.ar/mallin-ahogado' target='_blank' rel='noreferrer'>Más información</a>
+                            </div>
+                        </div>
                     </div>
+                    <div className="col-md-4 mb-3">
+                        <div className="card">
+                            <Image src={bosque} className="card-img-top" alt="Bosque Tallado" />
+                            <div className="card-body">
+                                <span className="card-title fs-4 fw-bold">{text.activity_bos_title} </span>
+                                <p className="card-text"> {text.activity_bos_p}  </p>
+                                <a className=" btn btn-primary" href='https://www.turismoelbolson.gob.ar/bosque-tallado' target='_blank' rel='noreferrer'>Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Creditos e información: <a href="https://www.turismoelbolson.gob.ar/" target='_blank' rel='noreferrer'> Web turismo El Bolsón</a></p>
                 </div>
             </div>
         </Layout>
     )
 }
 
-export default activity
+export default Activity
