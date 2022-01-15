@@ -8,7 +8,7 @@ function predio() {
         <Layout title="Fairy's Wood - Nuestro predio" active="photos">
             <div className="container">
                 <h1>Nuestro predio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ad eligendi, distinctio tempora fuga illo esse neque ipsum commodi reiciendis cupiditate possimus laboriosam ullam maxime officia architecto quae atque in.</p>
+                <p>Compartimos algunas imágenes de la chacra en diferentes épocas del año. La distancia entre ambas cabañas es de aproximadamente 75 metros, lo que confiere un entorno intimo a cada una.</p>
             </div>
             <div className="container">
 
