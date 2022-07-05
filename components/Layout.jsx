@@ -10,6 +10,7 @@ function Layout({ title, active, children }) {
         <title>{title}</title>
         <meta name="Fairy's Wood" content="Cabañas Fairy's Wood - El Bolsón" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Fairy's Wood Alquiler de Cabañas, El Bolson, Rio Negro."></meta>
         <link rel="icon" href="/logo.jpeg" />
       </Head>
       <main>
