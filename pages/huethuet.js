@@ -1,32 +1,25 @@
 import React from 'react'
 import Card from '../components/Card'
 import Layout from '../components/Layout'
+import { useLocales } from "../components/useLocales";
 
 function huethuet() {
+    const text = useLocales("huethuet");
     return (
         <Layout title="Fairy's Wood - Huet-Huet" active="photos">
             <div className="container">
-                <h1>Cabaña Huet-Huet</h1>
+                <h1>{text.title}</h1>
                 <div className="row">
                     <div className="col-lg-6">
                         <span className="fw-bold fs-5" >Incluye:</span>
                         <ul>
-                            <li>Dispenser Agua Potable.</li>
-                            <li>Heladera Grande.</li>
-                            <li>Horno.</li>
-                            <li>Vajilla.</li>
-                            <li>Termotanque.</li>
-                            <li>Microondas.</li>
-                            <li>TV con Directv.</li>
-                            <li>Secador de pelo.</li>
+                            {text.amenities && text.amenities.map((amenity, index) => (
+                                <li key={index}>{amenity}</li>
+                            ))}
                         </ul>
                     </div>
                     <div className="col-lg-6 mb-3">
-                        <p>
-                            La cabaña tiene capacidad para 2 personas y un niño. Posee una habitación matrimonial con colchón de alta densidad, plumón e incluye ropa de blanco (sábanas y toallas).
-                            En el exterior hay balcón deck, un asador individual y pileta para lavado de ropa. Los vehículos se guardan dentro
-                            de la propiedad.
-                        </p>
+                        <p>{text.description}</p>
                         <i>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +36,7 @@ function huethuet() {
                             </svg>
                         </i>
                         {"  "}
-                        <span>Somos PET Friendly!</span>
+                        <span>{text.petsAllowed}</span>
                     </div>
                 </div>
                 <div className="row">

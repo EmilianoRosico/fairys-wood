@@ -22,6 +22,9 @@ export default function Home() {
             <br />
             <p className="me-auto mb-2 mb-lg-0"> {text.p2}
             </p>
+            <br />
+            <p className="me-auto mb-2 mb-lg-0"> {text.p3}
+            </p>
           </div>
         </div>
         {/*Este div y el script importa el widget de IG */}

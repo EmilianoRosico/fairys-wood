@@ -4,31 +4,33 @@ import Image from "next/image";
 
 export default function LocaleSwitcher() {
   const router = useRouter();
-  const { locales, locale: activeLocale } = router;
-  const otherLocales = locales.filter((locale) => locale !== activeLocale);
+  const { locales, locale: activeLocale, pathname, query, asPath } = router;
+
+  const buttonStyle = {
+    backgroundColor: "white", /* Green */
+    border: "none",
+    color: "white",
+    padding: "3px 9px",
+    textAlign: "center",
+    textDecoration: "none",
+    display: "inline-block",
+    fontSize: "16px",
+    cursor: "pointer",
+  };
 
   return (
     <div>
-      <ul className="list-group">
-        {otherLocales.map((locale) => {
-          const { pathname, query, asPath } = router;
-          return (
-            <li className="list-group-item" key={locale}>
-              <Link href={{ pathname, query }} as={asPath} locale={locale}>
-                <a>
-                  <Image
-                    src={`/${locale == "en" ? locale : "es"}.png`}
-                    alt="Lang"
-                    width={18}
-                    height={18}
-                  />
-                  <span className="text-uppercase">{locale}</span>
-                </a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      {locales.map((locale) => (
+        <button style={buttonStyle} key={locale} onClick={() => router.push(pathname, asPath, { locale })}>
+          <Image
+            src={`/${locale}.png`}
+            alt="Lang"
+            width={18}
+            height={18}
+          />
+          {/* <span className="text-uppercase">{locale}</span> */}
+        </button>
+      ))}
     </div>
   );
 }
