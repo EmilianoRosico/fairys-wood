@@ -6,7 +6,7 @@ function Card({ picture }) {
   return (
     <div className="col-sm-3">
       <div className="card zoom border-0 text-center mb-3">
-        <Link href={`/fq${picture}`} passHref>
+        <Link href={`/fq${picture}`} passHref legacyBehavior>
           <a target="_blank" rel="noreferrer">
             <Image
               src={picture}

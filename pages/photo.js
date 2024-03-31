@@ -17,7 +17,7 @@ export default function Photo() {
                     <div className="col-lg-4">
                         <h4>Huet-Huet</h4>
                         <div className="zoom">
-                            <Link href="huethuet" passHref>
+                            <Link href="huethuet" passHref legacyBehavior>
                                 <a>
                                     <Image src={cabaña1} className="d-block w-100 " alt="Foto Cabaña1" />
                                 </a>
@@ -27,7 +27,7 @@ export default function Photo() {
                     <div className="col-lg-4">
                         <h4>Chucao</h4>
                         <div className="zoom">
-                            <Link href="chucao" passHref>
+                            <Link href="chucao" passHref legacyBehavior>
                                 <a>
                                     <Image src={cabaña2} className="d-block w-100" alt="Foto Cabaña2" />
                                 </a>
@@ -37,7 +37,7 @@ export default function Photo() {
                     <div className="col-lg-4">
                         <h4>Predio</h4>
                         <div className="zoom">
-                            <Link href="predio" passHref>
+                            <Link href="predio" passHref legacyBehavior>
                                 <a>
                                     <Image src={pradera} className="d-block w-100" alt="Foto Pradera" />
                                 </a>
@@ -59,5 +59,5 @@ export default function Photo() {
                 `}
             </style>
         </Layout>
-    )
+    );
 }
