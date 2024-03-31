@@ -10,6 +10,6 @@ export const useLocales = (path) => {
          setText(t.default);
       });
    }
-   }, [locale]);
+   }, [locale, path]);
 return text;
 };
