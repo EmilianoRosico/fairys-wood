@@ -3,7 +3,7 @@ import Card from '../components/Card'
 import Layout from '../components/Layout'
 import { useLocales } from "../components/useLocales";
 
-function huethuet() {
+export default function Huethuet() {
     const text = useLocales("huethuet");
     return (
         <Layout title="Fairy's Wood - Huet-Huet" active="photos">
@@ -53,5 +53,3 @@ function huethuet() {
         </Layout >
     )
 }
-
-export default huethuet
