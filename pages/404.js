@@ -8,7 +8,7 @@ export default function Custom404() {
         <Layout title={text.title404}>
             <div className="container text-center">
                 <h1>{text.title404}</h1>
-                <Image src="/logo.jpeg" alt="Logo" />
+                <Image src="/logo.jpeg" width={300} height={300} alt="Logo" />
 
             </div>
         </Layout>

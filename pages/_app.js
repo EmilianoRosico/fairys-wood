@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+//import "bootstrap/dist/js/bootstrap";
 import "../styles/globals.css";
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -22,7 +23,9 @@ function MyApp({ Component, pageProps }) {
       routerEvents.off('routeChangeComplete', handleRouteChange)
     }
   }, [routerEvents])
-
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
   return <Component {...pageProps} />;
 }
 
